@@ -1,3 +1,9 @@
+import Seo from "@/components/Seo";
 export default function Home() {
-    return "home";
+    return (
+        <>
+            <Seo title="Home"></Seo>
+            <h1>HOME</h1>
+        </>
+    );
 }
