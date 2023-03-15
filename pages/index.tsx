@@ -20,15 +20,7 @@ export default function Home({ results }: InferGetServerSidePropsType<GetServerS
     // }, []);
     const router = useRouter();
     const onClick = (id: number, title: string) => {
-        router.push(
-            {
-                pathname: `/movies/${id}`,
-                query: {
-                    title: title,
-                },
-            },
-            `/movies/${id}`
-        );
+        router.push(`/movies/${title}/${id}`);
     };
     return (
         <div className="container">
